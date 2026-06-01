@@ -19,21 +19,22 @@ const { title } = Astro.props;
 		<title>{title}</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
 	</head>
-	<body class="font-inter text-gray-900 bg-white">
-		<nav class="sticky top-0 z-50 bg-navy/90 backdrop-blur-md border-b border-white/10 py-4">
+	<body class="font-jakarta text-gray-900 bg-white selection:bg-electric selection:text-white">
+		<div class="fixed inset-0 pointer-events-none z-[9999] opacity-[0.03] noise-bg"></div>
+		<nav class="sticky top-0 z-50 bg-navy/80 backdrop-blur-xl border-b border-white/5 py-4">
 			<div class="container mx-auto px-4 flex justify-between items-center">
-				<a href="/" class="font-rajdhani text-2xl font-bold text-white tracking-tighter">
-					NUCLEUS <span class="text-electric">EDUCATION</span>
+				<a href="/" class="font-outfit text-2xl font-bold text-white tracking-tight group">
+					NUCLEUS <span class="text-electric group-hover:text-white transition-colors">EDUCATION</span>
 				</a>
 				
-				<div class="hidden md:flex gap-8 items-center">
-					<a href="/" class="text-gray-300 hover:text-white transition-colors font-medium">Home</a>
-					<a href="#courses" class="text-gray-300 hover:text-white transition-colors font-medium">Courses</a>
-					<a href="#why-nucleus" class="text-gray-300 hover:text-white transition-colors font-medium">Why Nucleus</a>
-					<a href="#contact" class="text-gray-300 hover:text-white transition-colors font-medium">Contact</a>
-					<a href="https://wa.me/910000000000" class="bg-electric text-white px-6 py-2 rounded-lg font-bold hover:bg-electric/90 transition-all">Enquire</a>
+				<div class="hidden md:flex gap-10 items-center">
+					<a href="/" class="text-gray-400 hover:text-white transition-all font-medium text-sm tracking-wide uppercase">Home</a>
+					<a href="#courses" class="text-gray-400 hover:text-white transition-all font-medium text-sm tracking-wide uppercase">Courses</a>
+					<a href="#why-nucleus" class="text-gray-400 hover:text-white transition-all font-medium text-sm tracking-wide uppercase">Why Nucleus</a>
+					<a href="#contact" class="text-gray-400 hover:text-white transition-all font-medium text-sm tracking-wide uppercase">Contact</a>
+					<a href="https://wa.me/910000000000" class="bg-white text-navy px-8 py-2.5 rounded-full font-bold hover:bg-electric hover:text-white transition-all duration-300 transform hover:scale-105 text-sm shadow-xl shadow-white/5">Enquire</a>
 				</div>
 
 				<!-- Mobile Menu Button -->
